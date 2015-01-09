@@ -37,16 +37,19 @@
 		var elNav = document.getElementsByClassName('page-navigation')[0];
 		var i = 0;
 		var arrFonts = ['Neucha', 'Bad Script', 'Marck Script'];
+		var arrColors = ['black', 'olive', 'dimgrey'];
 		elBanner.addEventListener('click', function (e) {
 			// debugger;
 			var target = e.target;
 			if (target.classList.contains('prev')) {
 				i = i ? --i : 0;
 				elNav.style['font-family'] = arrFonts[i];
+				elNav.style['color'] = arrColors[i];
 			}
 			if (target.classList.contains('next')) {
 				i = i < 2 ? ++i : 2;
 				elNav.style['font-family'] = arrFonts[i];
+				elNav.style['color'] = arrColors[i];
 			}
 		} , false);
 
