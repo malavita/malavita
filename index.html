@@ -1,1 +1,56 @@
-Malavita in Sicilia
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Malavita in Sicilia</title>
+	<link href='http://fonts.googleapis.com/css?family=Neucha|Bad+Script|Marck+Script|PT+Serif|Open+Sans&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+	<header class="page-header">
+		<h1>Malavita in Sicilia</h1>
+		<nav>
+			<ul id="page-nav" class="page-navigation ">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Экскурсии</a></li>
+				<li><a href="#">Обо мне</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Отзывы</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="page-content">
+
+		<div class="banner">
+			<span class="prev"></span>
+			<span class="next"></span>
+			<span class="copyright">&#169; 2010 Ernesto Cannella</span>
+		</div>
+	</main>
+
+	<script>
+	(function () {
+		var elBanner = document.getElementsByClassName('banner')[0];
+		var elNav = document.getElementsByClassName('page-navigation')[0];
+		var i = 0;
+		var arrFonts = ['Neucha', 'Bad Script', 'Marck Script'];
+		elBanner.addEventListener('click', function (e) {
+			// debugger;
+			var target = e.target;
+			if (target.classList.contains('prev')) {
+				i = i ? --i : 0;
+				elNav.style['font-family'] = arrFonts[i];
+			}
+			if (target.classList.contains('next')) {
+				i = i < 2 ? ++i : 2;
+				elNav.style['font-family'] = arrFonts[i];
+			}
+		} , false);
+
+	}) ();
+	</script>
+</body>
+</html>

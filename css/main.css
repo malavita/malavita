@@ -1,0 +1,67 @@
+body {
+	font-family: 'PT Serif', Helvetica, Arial, serif;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.4;
+	margin: 1em 0;
+	text-align: center;
+}
+
+
+a {
+	font-size: 1em;
+	line-height: 1;
+	color: #000;
+	text-decoration: none;
+}
+
+.page-header {
+	margin-bottom: 1em;
+}
+
+.page-navigation {
+	font: 1.4em Neucha, Arial, Helvetica;
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.page-navigation a {
+	display: block;
+	padding: 10px 30px;
+}
+
+.banner {
+	padding-top: 60%;
+	position: relative;
+	background: url(../images/RuderidiPoggioreale.jpg);
+	background-size: cover;
+}
+
+.prev, .next {
+	content: url(../images/arrow.svg);
+	display: block;
+	position: absolute;
+	top: 10px;
+	cursor: pointer;
+}
+
+.prev {
+	transform: rotateY(180deg);
+	right: 50%;
+}
+
+.next {
+	left: 50%;
+}
+
+.copyright {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	color: #fff;
+	transform: translate3d(-50%, 0, 0);
+}
