@@ -25,8 +25,8 @@
 	<main class="page-content">
 
 		<div class="banner">
-			<span class="prev"></span>
-			<span class="next"></span>
+			<div class="prev"></div>
+			<div class="next"></div>
 			<span class="copyright">&#169; 2010 Ernesto Cannella</span>
 		</div>
 	</main>
@@ -43,12 +43,12 @@
 			var target = e.target;
 			if (target.classList.contains('prev')) {
 				i = i ? --i : 0;
-				elNav.style['font-family'] = arrFonts[i];
+				elNav.style.fontFamily = arrFonts[i];
 				elNav.style['color'] = arrColors[i];
 			}
 			if (target.classList.contains('next')) {
 				i = i < 2 ? ++i : 2;
-				elNav.style['font-family'] = arrFonts[i];
+				elNav.style.fontFamily = arrFonts[i];
 				elNav.style['color'] = arrColors[i];
 			}
 		} , false);

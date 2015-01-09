@@ -51,8 +51,10 @@ a {
 }
 
 .prev, .next {
-	content: url(../images/arrow.svg);
-	display: block;
+	background: url(../images/arrow.svg);
+	background-size: contain;
+	height: 50px;
+	width: 50px;
 	position: absolute;
 	top: 10px;
 	cursor: pointer;
