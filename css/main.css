@@ -5,7 +5,7 @@ body {
 h1 {
 	font-size: 2.5em;
 	line-height: 1.4;
-	margin: 1em 0;
+	padding: 1.5em 0;
 	text-align: center;
 }
 
@@ -18,11 +18,14 @@ a {
 }
 
 .page-header {
-	margin-bottom: 1em;
+	padding: 1em;
+	background: url(../images/sicilia.svg) no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% -20px;
 }
 
 .page-navigation {
-	font: 1.4em Neucha, Arial, Helvetica;
+	font: 1.6em Neucha, Arial, Helvetica;
 	display: flex;
 	justify-content: center;
 	border-top: 1px solid #ddd;
