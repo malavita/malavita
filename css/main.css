@@ -4,6 +4,7 @@ body {
 
 h1 {
 	font-size: 2.5em;
+	font-family: 'acquestscript';
 	line-height: 1.4;
 	padding: 1.5em 0;
 	text-align: center;
@@ -25,7 +26,7 @@ a {
 }
 
 .page-navigation {
-	font: 1.6em Neucha, Arial, Helvetica;
+	font: 2em Neucha, Arial, Helvetica;
 	display: flex;
 	justify-content: center;
 	border-top: 1px solid #ddd;
