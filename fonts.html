@@ -5,6 +5,7 @@
 	<title>Malavita in Sicilia</title>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/fonts2.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<style>
 		div {
@@ -27,7 +28,7 @@
 			var div = document.createElement('div');
 			var el, resHtml = '';
 
-			for (var i = 0; i < 300; i++) {
+			for (var i = 0; i < 305; i++) {
 				resHtml += html;
 			};
 
@@ -43,7 +44,7 @@
 			for (var i = 0; i < arrUls.length; i++) {
 				arrUls[i].style.fontFamily = data[i].slice(0,-4);
 				el = document.createElement('li');
-				el.innerHTML = i + 1;
+				el.innerHTML = data[i].slice(0,-4) + '  ' + (i + 1);
 				arrUls[i].appendChild(el);
 			};
 
