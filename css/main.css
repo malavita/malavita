@@ -1,10 +1,45 @@
+@font-face {
+	font-family: "dpark";
+	src: url("../fonts/dpark.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Five Minutes";
+	src: url("../fonts/Five Minutes.otf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "NINA_C";
+	src: url("../fonts/NINA_C.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Round Script";
+	src: url("../fonts/Round Script.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SSCR";
+	src: url("../fonts/SSCR.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "zhizn_regular";
+	src: url("../fonts/zhizn_regular.otf");
+	font-weight: normal;
+}
+
 body {
-	font-family: 'PT Serif', Helvetica, Arial, serif;
+	font-family: Arial, sans-serif;
 }
 
 h1 {
-	font-size: 2.5em;
-	font-family: 'acquestscript';
+	font-size: 3.5em;
 	line-height: 1.4;
 	padding: 1.5em 0;
 	text-align: center;
@@ -26,17 +61,19 @@ a {
 }
 
 .page-navigation {
-	font: 2em Neucha, Arial, Helvetica;
+	font: 2.5em Arial, Helvetica, sans-serif;
 	display: flex;
 	justify-content: center;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+	margin-top: 5px;
 }
 
 .page-navigation a {
 	display: block;
 	padding: 10px 30px;
 	color: inherit;
+	text-transform: lowercase;
 	text-rendering: optimizeLegibility;
 	font-feature-settings: "kern";
 	-webkit-font-feature-settings: "kern";

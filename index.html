@@ -3,25 +3,98 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Malavita in Sicilia</title>
-	<link href='http://fonts.googleapis.com/css?family=Neucha|Bad+Script|Marck+Script|PT+Serif|Open+Sans&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/fonts.css">
+	<link href='http://fonts.googleapis.com/css?family=Stalemate|Clicker+Script|Sacramento|Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="./css/fonts.css"> -->
 	<link rel="stylesheet" href="./css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script>
+		window.onload = my;
+		function my() {
+			var elNav = document.getElementsByClassName('page-navigation')[0];
+			var arrMenuFonts = ['Arial', 'dpark', 'Five Minutes', 'Round Script', 'zhizn_regular'];
+			var menuItems = document.querySelectorAll('#menu-fonts a');
+			var menu = document.getElementById('menu-fonts');
+			var btnValue = document.querySelector('#dropdownMenu2 .value');
+
+			Array.prototype.map.call(menuItems, function (item, index) {
+				item.innerHTML = arrMenuFonts[index];
+			});
+
+			menu.addEventListener('click', function (e) {
+				var target = e.target;
+				if (target.matches('#menu-fonts a')) {
+					debugger;
+					e.preventDefault();
+					btnValue.innerText = target.innerHTML;
+					elNav.style.fontFamily = target.innerHTML;
+					elNav.style.fontStyle = 'italic';
+				}
+			}, false);
+
+			var arrLogoFonts = ['Arial', 'Stalemate', 'Clicker Script', 'Sacramento', 'Annie Use Your Telescope'];
+			var elLogo = document.getElementById('logo');
+			var logoItems = document.querySelectorAll('#logo-fonts a');
+			var logo = document.getElementById('logo-fonts');
+			var btnValue1 = document.querySelector('#dropdownMenu1 .value');;
+
+			Array.prototype.map.call(logoItems, function (item, index) {
+				item.innerHTML = arrLogoFonts[index];
+			});
+
+			logo.addEventListener('click', function (e) {
+				var target = e.target;
+				if (target.matches('#logo-fonts a')) {
+					e.preventDefault();
+					btnValue1.innerText = target.innerHTML;
+					elLogo.style.fontFamily = target.innerHTML;
+				}
+			}, false);
+
+		};
+	</script>
 </head>
 <body>
 
 	<header class="page-header">
-		<h1>Malavita in Sicilia</h1>
+		<h1 id="logo">Malavita in Sicilia</h1>
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+				<span class="value">Arial</span>
+				<span class="caret"></span>
+			</button>
+			<ul id="logo-fonts" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+			</ul>
+		</div>
 		<nav>
-			<ul id="page-nav" class="page-navigation ">
+			<ul id="page-nav" class="page-navigation">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Экскурсии</a></li>
 				<li><a href="#">Обо мне</a></li>
 				<li><a href="#">Контакты</a></li>
 				<li><a href="#">Отзывы</a></li>
-				<li><a href="./fonts.html">Шрифты</a></li>
 			</ul>
 		</nav>
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+				<span class="value">Arial</span>
+				<span class="caret"></span>
+			</button>
+			<ul id="menu-fonts" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+			</ul>
+		</div>
 	</header>
 
 	<main class="page-content">
@@ -30,30 +103,5 @@
 			<span class="copyright">&#169; 2010 Ernesto Cannella</span>
 		</div>
 	</main>
-
-	<script>
-	(function () {
-		var elBanner = document.getElementsByClassName('banner')[0];
-		var elNav = document.getElementsByClassName('page-navigation')[0];
-		var i = 0;
-		var arrFonts = ['Neucha', 'Bad Script', 'Marck Script'];
-		var arrColors = ['black', 'olive', 'dimgrey'];
-		elBanner.addEventListener('click', function (e) {
-			// debugger;
-			var target = e.target;
-			if (target.classList.contains('prev')) {
-				i = i ? --i : 0;
-				elNav.style.fontFamily = arrFonts[i];
-				elNav.style['color'] = arrColors[i];
-			}
-			if (target.classList.contains('next')) {
-				i = i < 2 ? ++i : 2;
-				elNav.style.fontFamily = arrFonts[i];
-				elNav.style['color'] = arrColors[i];
-			}
-		} , false);
-
-	}) ();
-	</script>
 </body>
 </html>
