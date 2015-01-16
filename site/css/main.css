@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Five Minutes";
+	src: url("../../fonts/Five Minutes.otf");
+	font-weight: normal;
+}
+
+h1 {
+	font: 6.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.page-header {
+	padding: 2em 3em;
+}
+
+.page-navigation {
+	display: flex;
+	justify-content: space-around;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	padding: 0.5em 0;
+}
+
+.page-navigation a {
+	font-size: 2em;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
