@@ -20,18 +20,77 @@ a {
 }
 
 .page-header {
-	padding: 2em 3em;
+	padding: 2em 3em 1em;
 }
 
 .page-navigation {
 	display: flex;
-	justify-content: space-around;
 	border-top: 2px solid #eee;
 	border-bottom: 2px solid #eee;
 	padding: 0.5em 0;
 }
 
-.page-navigation a {
+.top-menu {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 1.5em;
+	flex: 3;
+}
+
+.social-menu {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	padding: 0 1.5em;
+}
+
+.social-menu li {
+	margin: 0 0.3em;
+}
+
+.top-menu a {
 	font-size: 2em;
 	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
+
+.page-content {
+	padding: 0 3em;
+	display: flex;
+}
+
+.banner {
+	flex: 3;
+	padding: 0 1.5em;
+	border-left: 2px solid #eee;
+}
+
+.banner img {
+	width: 100%;
+	border-radius: 2px;
+}
+
+.page-sidebar {
+	border-left: 2px solid #eee;
+	border-right: 2px solid #eee;
+	flex: 1;
+	padding: 1em 1.5em 0 1.5em;
+}
+
+.page-sidebar h2 {
+	text-align: center;
+	font-size: 2em;
+	margin: 1em 0;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
+
+.page-sidebar p {
+	font-size: 1.2em;
+}
+
+.page-sidebar img {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-top: 1em;
 }
