@@ -20,7 +20,7 @@ a {
 }
 
 .page-header {
-	padding: 2em 3em;
+	padding: 2em 3em 1em;
 }
 
 .page-navigation {
@@ -34,4 +34,41 @@ a {
 .page-navigation a {
 	font-size: 2em;
 	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
+
+.page-content {
+	padding: 0 3em;
+	display: flex;
+}
+
+.banner {
+	flex: 3;
+	padding-right: 1.5em;
+}
+
+.banner img {
+	width: 100%;
+	border-radius: 2px;
+}
+
+.page-sidebar {
+	border-left: 2px solid #eee;
+	flex: 1;
+	padding: 1em 0 0 1.5em;
+}
+
+.page-sidebar h2 {
+	text-align: center;
+	font-size: 2em;
+	margin: 1em 0;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
+
+.page-sidebar p {
+	font-size: 1.2em;
+}
+
+.page-sidebar img {
+	width: 90%;
+	border-radius: 50%;
 }
