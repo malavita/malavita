@@ -37,6 +37,12 @@ a {
 	flex: 3;
 }
 
+.top-menu a {
+	font-size: 2em;
+	text-transform: lowercase;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
+
 .social-menu {
 	display: flex;
 	flex: 1;
@@ -46,11 +52,6 @@ a {
 
 .social-menu li {
 	margin: 0 0.3em;
-}
-
-.top-menu a {
-	font-size: 2em;
-	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
 }
 
 .page-content {
