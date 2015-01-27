@@ -51,7 +51,7 @@ a {
 }
 
 .social-menu li {
-	margin: 0 0.3em;
+	margin: 0 0.15em;
 }
 
 .page-content {
@@ -95,4 +95,36 @@ a {
 	margin: 0 auto;
 	border-radius: 50%;
 	margin-top: 1em;
+}
+
+.icon {
+	display: block;
+	text-indent: -9999px;
+	width: 2em;
+	height: 2em;
+}
+
+.icon.facebook {
+	background: url(../images/facebook.svg);
+	background-size: 2em;
+}
+
+.icon.flickr {
+	background: url(../images/flickr.svg);
+	background-size: 2em;
+}
+
+.icon.instagram {
+	background: url(../images/instagram.svg);
+	background-size: 2em;
+}
+
+.icon.rss {
+	background: url(../images/rss.svg);
+	background-size: 2em;
+}
+
+.icon.search {
+	background: url(../images/search.svg);
+	background-size: 2em;
 }
