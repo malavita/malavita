@@ -20,7 +20,7 @@ a {
 }
 
 .page-header {
-	padding: 2em 3em 1em;
+	padding: 2em 0 0;
 }
 
 .page-navigation {
@@ -55,8 +55,9 @@ a {
 }
 
 .page-content {
-	padding: 0 3em;
+	padding: 1em 0;
 	display: flex;
+	border-bottom: 2px solid #eee;
 }
 
 .banner {
@@ -95,6 +96,8 @@ a {
 	margin: 0 auto;
 	border-radius: 50%;
 	margin-top: 1em;
+	padding: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .icon {
@@ -127,4 +130,55 @@ a {
 .icon.search {
 	background: url(../images/search.svg);
 	background-size: 2em;
+}
+
+.posts {
+	flex: 3;
+	padding: 0 1.5em;
+}
+
+.posts-list {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.posts-list li {
+	flex: 1 0 25%;
+	margin: 0 0.3em 0.3em;
+}
+
+.posts-list img {
+	width: 100%;
+}
+
+.page-footer {
+	border-top: 2px solid #eee;
+	height: 100px;
+	background-color: #ddd;
+	margin-top: 1em;
+}
+
+.page-navigation li {
+	position: relative;
+}
+
+.page-navigation svg {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+}
+
+.page-navigation path {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+}
+
+.page-navigation a:hover path {
+	-webkit-animation: dash 0.2s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
