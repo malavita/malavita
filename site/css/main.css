@@ -141,13 +141,12 @@ a {
 	flex-flow: row wrap;
 }
 
-.posts-list li:first-of-type img {
-	border-left: none;
+.posts-list li:first-of-type {
+	border-left: 2px solid #eee;
 }
 
 .posts-list li {
 	flex: 1;
-	cursor: pointer;
 	border-right: 2px solid #eee;
 }
 
@@ -158,10 +157,11 @@ a {
 
 .posts-list div {
 	overflow: hidden;
-	margin: 0 .5em;
+	margin: 0 1.5em;
 }
 
 .posts-list img {
+	cursor: pointer;
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
@@ -180,14 +180,14 @@ a {
 
 .posts-list h2 {
 	font-size: 2em;
-	text-transform: uppercase;
-	margin-top: 1em;
+	text-transform: lowercase;
+	margin-top: 0.5em;
 }
 
 .posts-list h3 {
 	font-size: 1.5em;
 	text-transform: lowercase;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 .page-footer {
