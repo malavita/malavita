@@ -147,6 +147,11 @@ a {
 
 .posts-list li {
 	flex: 1;
+	cursor: pointer;
+}
+
+.posts-list li:hover img {
+	opacity: 1;
 }
 
 .posts-list img {
@@ -154,7 +159,10 @@ a {
 	box-sizing: border-box;
 	border-left: 2px solid #eee;
 	padding: 0 .5em;
-	width: 100%;
+	width: 90%;
+	opacity: 0.8;
+	margin: 0 auto;
+	transition: opacity 0.35s linear;
 }
 
 .posts-list h2, .posts-list h3 {
@@ -175,7 +183,7 @@ a {
 }
 
 .page-footer {
-	border-top: 2px solid #eee;
+	/*border-top: 2px solid #eee;*/
 	height: 100px;
 	/*background-color: #ddd;*/
 	margin-top: 1em;
@@ -204,4 +212,51 @@ a {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 332px;
+	width: 48%;
+	/*background: #3085a3;*/
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+	transition: all 0.3s linear;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	/*color: #fff;*/
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure img:hover {
+	opacity: 1;
+	transform: translateY(-20px);
 }
