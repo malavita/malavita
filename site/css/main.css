@@ -57,6 +57,7 @@ a {
 .page-content {
 	padding: 1em 0;
 	display: flex;
+	border-bottom: 2px solid #eee;
 }
 
 .banner {
@@ -131,12 +132,33 @@ a {
 	background-size: 2em;
 }
 
+.feed-title {
+	height: 70px;
+	margin: 0.5em auto;
+	text-align: center;
+	display: flex;
+	position: relative;
+	width: 350px;
+}
+
+.feed-title span {
+	margin: auto;
+	font-size: 2em;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+}
+
+.feed-title svg {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .posts-list:first-of-type {
-	border-top: 2px solid #eee;
+	/*border-top: 2px solid #eee;*/
 }
 
 .posts-list {
-	padding-top: 1em;
+	/*padding-top: 1em;*/
 	display: flex;
 	flex-flow: row wrap;
 }
