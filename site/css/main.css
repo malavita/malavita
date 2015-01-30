@@ -148,21 +148,29 @@ a {
 .posts-list li {
 	flex: 1;
 	cursor: pointer;
+	border-right: 2px solid #eee;
 }
 
-.posts-list li:hover img {
+.posts-list img:hover {
 	opacity: 1;
+	transform: scale(1);
+}
+
+.posts-list div {
+	overflow: hidden;
+	margin: 0 .5em;
 }
 
 .posts-list img {
 	display: block;
 	box-sizing: border-box;
-	border-left: 2px solid #eee;
-	padding: 0 .5em;
-	width: 90%;
+	width: 100%;
 	opacity: 0.8;
 	margin: 0 auto;
-	transition: opacity 0.35s linear;
+	transform: scale(1.12);
+	transition: all 0.25s linear;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .posts-list h2, .posts-list h3 {
@@ -231,7 +239,7 @@ a {
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 332px;
-	width: 48%;
+	width: 30%;
 	/*background: #3085a3;*/
 	background-color: #fff;
 	text-align: center;
