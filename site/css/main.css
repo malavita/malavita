@@ -57,8 +57,6 @@ a {
 .page-content {
 	padding: 1em 0;
 	display: flex;
-	border-bottom: 2px solid #eee;
-	margin-bottom: 1em;
 }
 
 .banner {
@@ -134,8 +132,14 @@ a {
 }
 
 .posts-list {
+	border-top: 2px solid #eee;
+	padding-top: 1em;
 	display: flex;
 	flex-flow: row wrap;
+}
+
+.posts-list li:first-of-type img {
+	border-left: none;
 }
 
 .posts-list li {
@@ -143,6 +147,10 @@ a {
 }
 
 .posts-list img {
+	display: block;
+	box-sizing: border-box;
+	border-left: 2px solid #eee;
+	padding: 0 .5em;
 	width: 100%;
 }
 
@@ -166,7 +174,7 @@ a {
 .page-footer {
 	border-top: 2px solid #eee;
 	height: 100px;
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 	margin-top: 1em;
 }
 
