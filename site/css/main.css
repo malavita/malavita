@@ -90,6 +90,10 @@ a {
 	font-size: 1.2em;
 }
 
+.page-sidebar span {
+	text-decoration: line-through;
+}
+
 .page-sidebar img {
 	width: 90%;
 	display: block;
@@ -138,7 +142,7 @@ a {
 	text-align: center;
 	display: flex;
 	position: relative;
-	width: 350px;
+	/*width: 350px;*/
 }
 
 .feed-title span {
