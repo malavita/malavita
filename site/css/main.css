@@ -5,7 +5,7 @@
 }
 
 h1 {
-	font: 6.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
+	font: 9.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
 	text-align: center;
 }
 
@@ -20,7 +20,7 @@ a {
 }
 
 .page-header {
-	padding: 2em 0 0;
+	padding: 2.5em 0 0;
 }
 
 .page-navigation {
@@ -138,7 +138,7 @@ a {
 
 .feed-title {
 	height: 70px;
-	margin: 0.5em auto;
+	margin: 2em auto;
 	text-align: center;
 	display: flex;
 	position: relative;
