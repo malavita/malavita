@@ -4,32 +4,33 @@ module.exports = function(grunt) {
 
   "use strict";
 
-var paths = {
-  html: ["index.html",
-    "excursions.html",
-    "blog.html",
-    "feedbacks.html",
-    "contacts.html",
-    "_layouts/*.html",
-    "_posts/*.md",
-    "_excursions/*.md",
-    "_includes/*.html"
-  ],
-  scss: ['./scss/global.scss'],
-  css: ['./css/style-unprefixed.css', './css/style.css'],
-  js: ['./js/script.js']
-};
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
-    uglify: {
-      global: {
-        files: {
-          './js/script.min.js': paths.js
-        }
-      }
+    paths: {
+      html: ["index.html",
+        "excursions.html",
+        "blog.html",
+        "feedbacks.html",
+        "contacts.html",
+        "_layouts/*.html",
+        "_posts/*.md",
+        "_excursions/*.md",
+        "_includes/*.html"
+      ],
+      scss: ['./scss/global.scss'],
+      css: ['./css/style-unprefixed.css', './css/style.css'],
+      js: ['./js/script.js']
     },
+
+    // uglify: {
+    //   global: {
+    //     files: {
+    //       './js/script.min.js': '<%= paths.js %>'
+    //     }
+    //   }
+    // },
 
     sass: {
       global: {
@@ -37,15 +38,15 @@ var paths = {
           style: 'expanded'
         },
         files: {
-          paths.css[0]: paths.scss
+          '<%= paths.css[0] %>': '<%= paths.scss %>'
         }
       }
     },
 
     autoprefixer: {
       global: {
-        src: paths.css[0],
-        dest: paths.css[1]
+        src: '<%= paths.css[0] %>',
+        dest: '<%= paths.css[1] %>'
       }
     },
 
@@ -66,10 +67,10 @@ var paths = {
         files: paths.html,
         tasks: ["shell:jekyllBuild"]
       },
-      js: {
-        files: ["./js/*.js"],
-        tasks: ["uglify", "shell:jekyllBuild"]
-      },
+      // js: {
+      //   files: ["./js/*.js"],
+      //   tasks: ["uglify", "shell:jekyllBuild"]
+      // },
       css: {
         files: ["./scss/*.scss"],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
@@ -79,7 +80,15 @@ var paths = {
 
   require("load-grunt-tasks")(grunt);
 
-  grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("serve", [
+    "shell:jekyllServe"
+  ]);
+
+  grunt.registerTask("default", [
+    "sass",
+    "autoprefixer",
+    "shell:jekyllBuild",
+    "watch"
+  ]);
 
 };
