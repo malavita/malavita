@@ -1,0 +1,17 @@
+name: Tatiana Catalioto
+markdown: redcarpet
+baseurl: "http://malavita-in-sicilia.com"
+exclude: [
+  .git,
+  .gitignore,
+  Thumbs.db,
+  CNAME,
+  scss,
+  .sass-cache,
+  package.json,
+  Gruntfile.js,
+  node_modules,
+  readme.md
+]
+
+excerpt_separator: <!--more-->
