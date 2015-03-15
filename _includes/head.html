@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% if site.baseurl == "" %}
+<html lang="en" class="dev">
+{% else %}
+<html lang="en">
+{% endif %}
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css">
+	<link href='http://fonts.googleapis.com/css?family=Stalemate|Clicker+Script|Sacramento|Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+</head>

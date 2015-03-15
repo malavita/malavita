@@ -1,0 +1,43 @@
+---
+layout: default
+title: Malavita in Sicilia - Blog
+---
+
+<main>
+
+  <div class="site-width">
+
+    {% for post in site.posts limit:5 %}
+
+      <article class="article">
+
+        <div class="meta">
+          <time>
+            {{ post.date | date_to_string }}
+          </time>
+        </div>
+
+        <h2>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+
+        <div class="article-text">
+          {{ post.excerpt }}
+        </div>
+
+        <a href="{{ post.url }}" class="read-more">
+          Read More
+          <svg>
+            <use xlink:href="#shape-triangle-right" />
+          </svg>
+        </a>
+
+      </article>
+
+    {% endfor %}
+
+  </div>
+
+</main>
