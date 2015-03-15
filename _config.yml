@@ -1,6 +1,6 @@
 name: Tatiana Catalioto
 markdown: redcarpet
-baseurl: "http://malavita-in-sicilia.com"
+baseurl: ""
 exclude: [
   .git,
   .gitignore,
