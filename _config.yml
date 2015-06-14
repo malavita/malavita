@@ -14,6 +14,8 @@ exclude: [
   readme.md
 ]
 
+permalink: /posts/:title/
+
 prose:
   rooturl: '_posts'
   siteurl: 'http://malavita.github.io/'
