@@ -5,7 +5,9 @@ categories:
 image: ""
 published: true
 title: October Test Post
+layout: post
 ---
+
 
 
 ## A New Post
