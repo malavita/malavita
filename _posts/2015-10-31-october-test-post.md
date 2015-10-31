@@ -1,10 +1,12 @@
 ---
 excerpt_separator: "<!--more-->"
-categories: null
+categories: 
+  - "null"
 image: ""
-published: false
+published: true
 title: October Test Post
 ---
+
 
 ## A New Post
 
