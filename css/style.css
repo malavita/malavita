@@ -1,279 +1,292 @@
 @font-face {
-  font-family: "Five Minutes";
-  src: url("../fonts/Five Minutes.otf");
-  font-weight: normal;
+	font-family: "Five Minutes";
+	src: url("../fonts/Five Minutes.otf");
+	font-weight: normal;
 }
+
 h1 {
-  font: 9.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
-  text-align: center;
+	font: 9.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
+	text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+	text-decoration: none;
+	color: #000;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .page-header {
-  padding: 2.5em 0 0;
+	padding: 2.5em 0 0;
 }
 
 .page-navigation {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
-  padding: 0.5em 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	padding: 0.5em 0;
 }
 
 .top-menu {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  padding: 0 1.5em;
-  -webkit-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	padding: 0 1.5em;
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	    -ms-flex: 3;
+	        flex: 3;
 }
 
 .top-menu a {
-  font-size: 2em;
-  text-transform: lowercase;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	text-transform: lowercase;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
 }
 
 .social-menu {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 1.5em;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 0 1.5em;
 }
 
 .social-menu li {
-  margin: 0 0.15em;
+	margin: 0 0.15em;
 }
 
 .page-content {
-  padding: 1em 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 2px solid #eee;
+	padding: 1em 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border-bottom: 2px solid #eee;
 }
 
 .banner {
-  -webkit-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  padding: 0 1.5em;
-  border-left: 2px solid #eee;
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	    -ms-flex: 3;
+	        flex: 3;
+	padding: 0 1.5em;
+	border-left: 2px solid #eee;
 }
 
 .banner img {
-  width: 100%;
-  border-radius: 2px;
+	width: 100%;
+	border-radius: 2px;
 }
 
 .page-sidebar {
-  border-left: 2px solid #eee;
-  border-right: 2px solid #eee;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 1em 1.5em 0 1.5em;
+	border-left: 2px solid #eee;
+	border-right: 2px solid #eee;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding: 1em 1.5em 0 1.5em;
 }
 
 .page-sidebar h2 {
-  text-align: center;
-  font-size: 2em;
-  margin: 1em 0;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
-  text-transform: lowercase;
+	text-align: center;
+	font-size: 2em;
+	margin: 1em 0;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
 }
 
 .page-sidebar p {
-  font: 1.05em/1.3 'Roboto', sans-serif;
+	font: 1.05em/1.3 'Roboto', sans-serif;
 }
 
 .page-sidebar span {
-  text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 .page-sidebar img {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin-top: 1em;
-  padding: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.6);
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-top: 1em;
+	padding: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .icon {
-  display: block;
-  text-indent: -9999px;
-  width: 2em;
-  height: 2em;
+	display: block;
+	text-indent: -9999px;
+	width: 2em;
+	height: 2em;
 }
 
 .icon.facebook {
-  background: url(../svg/facebook.svg);
-  background-size: 2em;
+	background: url(../svg/facebook.svg);
+	background-size: 2em;
 }
 
 .icon.flickr {
-  background: url(../svg/flickr.svg);
-  background-size: 2em;
+	background: url(../svg/flickr.svg);
+	background-size: 2em;
 }
 
 .icon.instagram {
-  background: url(../svg/instagram.svg);
-  background-size: 2em;
+	background: url(../svg/instagram.svg);
+	background-size: 2em;
 }
 
 .icon.rss {
-  background: url(../svg/rss.svg);
-  background-size: 2em;
+	background: url(../svg/rss.svg);
+	background-size: 2em;
 }
 
 .icon.search {
-  background: url(../svg/search.svg);
-  background-size: 2em;
+	background: url(../svg/search.svg);
+	background-size: 2em;
 }
 
 .feed-title {
-  height: 70px;
-  margin: 2em auto;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  /*width: 350px;*/
+	height: 70px;
+	margin: 2em auto;
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	/*width: 350px;*/
 }
 
 .feed-title span {
-  margin: auto;
-  font-size: 2em;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+	margin: auto;
+	font-size: 2em;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
 }
 
 .feed-title svg {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .posts-list:first-of-type {
-  /*border-top: 2px solid #eee;*/
+	/*border-top: 2px solid #eee;*/
 }
 
 .posts-list {
-  /*padding-top: 1em;*/
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+	/*padding-top: 1em;*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 }
 
 .posts-list li:first-of-type {
-  border-left: 2px solid #eee;
+	border-left: 2px solid #eee;
 }
 
 .posts-list li {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-right: 2px solid #eee;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	border-right: 2px solid #eee;
 }
 
 .posts-list img:hover {
-  opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+	opacity: 1;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 }
 
 .posts-list div {
-  overflow: hidden;
-  margin: 0 1.5em;
+	overflow: hidden;
+	margin: 0 1.5em;
 }
 
 .posts-list img {
-  cursor: pointer;
-  display: block;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  width: 100%;
-  opacity: 0.8;
-  margin: 0 auto;
-  -webkit-transform: scale(1.12);
-      -ms-transform: scale(1.12);
-          transform: scale(1.12);
-  transition: all 0.25s linear;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+	cursor: pointer;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	opacity: 0.8;
+	margin: 0 auto;
+	-webkit-transform: scale(1.12);
+	    -ms-transform: scale(1.12);
+	        transform: scale(1.12);
+	-webkit-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .posts-list h2, .posts-list h3 {
-  text-align: center;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
 }
 
 .posts-list h2 {
-  font-size: 2em;
-  text-transform: lowercase;
-  margin-top: 0.5em;
+	font-size: 2em;
+	text-transform: lowercase;
+	margin-top: 0.5em;
 }
 
 .posts-list h3 {
-  font-size: 1.5em;
-  text-transform: lowercase;
-  margin-bottom: 0.5em;
+	font-size: 1.5em;
+	text-transform: lowercase;
+	margin-bottom: 0.5em;
 }
 
 .page-footer {
-  /*border-top: 2px solid #eee;*/
-  height: 100px;
-  /*background-color: #ddd;*/
-  margin-top: 1em;
+	/*border-top: 2px solid #eee;*/
+	height: 100px;
+	/*background-color: #ddd;*/
+	margin-top: 1em;
 }
 
 .page-navigation li {
-  position: relative;
+	position: relative;
 }
 
 .page-navigation svg {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
 }
 
 .page-navigation path {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
 }
 
 .page-navigation a:hover path {
-  -webkit-animation: dash 0.2s linear forwards;
+	-webkit-animation: dash 0.2s linear forwards;
 }
 
 @-webkit-keyframes dash {
@@ -281,51 +294,53 @@ a {
     stroke-dashoffset: 0;
   }
 }
+
 .grid {
-  position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  max-width: 1000px;
-  list-style: none;
-  text-align: center;
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
 }
 
 .grid figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 332px;
-  width: 30%;
-  /*background: #3085a3;*/
-  background-color: #fff;
-  text-align: center;
-  cursor: pointer;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 332px;
+	width: 30%;
+	/*background: #3085a3;*/
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
 }
 
 .grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
-  transition: all 0.3s linear;
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
 
 .grid figure figcaption {
-  padding: 2em;
-  /*color: #fff;*/
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+	padding: 2em;
+	/*color: #fff;*/
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .grid figure img:hover {
-  opacity: 1;
-  -webkit-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-          transform: translateY(-20px);
+	opacity: 1;
+	-webkit-transform: translateY(-20px);
+	    -ms-transform: translateY(-20px);
+	        transform: translateY(-20px);
 }
