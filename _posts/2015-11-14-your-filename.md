@@ -1,11 +1,13 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-categories: null
+categories: 
+  - "null"
 image: ""
-published: false
-title: ""
+published: true
+title: Untitled
 ---
+
 
 ## A New Post
 
