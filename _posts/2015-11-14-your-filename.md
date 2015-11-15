@@ -4,7 +4,7 @@ layout: post
 categories: 
   - "null"
 image: ""
-published: false
+published: true
 title: "gh-pages"
 ---
 
