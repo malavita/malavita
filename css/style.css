@@ -203,9 +203,9 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
-/* .about-site__sidebar span {*/
-/*  text-decoration: line-through;*/
-/* }*/
+/*.about-site__sidebar span {
+  text-decoration: line-through;
+}*/
 
 .posts-sec {
   padding-top: 10px;
@@ -305,7 +305,7 @@ body {
 .page-footer {
   border-top: 2px solid #dadada;
   padding: 2em 0;
-  /* background-color: #FAFBFC; */
+  /*background-color: #FAFBFC; */
   margin-top: 40px;
 }
 .copyright {
@@ -313,49 +313,49 @@ body {
 }
 
 
-/* .grid {*/
-/*   position: relative;*/
-/*   margin: 0 auto;*/
-/*   padding: 1em 0 4em;*/
-/*   max-width: 1000px;*/
-/*   list-style: none;*/
-/*   text-align: center;*/
-/* }*/
+/* .grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
 
-/* .grid figure {*/
-/*   position: relative;*/
-/*   float: left;*/
-/*   overflow: hidden;*/
-/*   margin: 10px 1%;*/
-/*   min-width: 320px;*/
-/*   max-width: 480px;*/
-/*   max-height: 332px;*/
-/*   width: 30%;*/
-/*   /*background: #3085a3;*/*/
-/*   background-color: #fff;*/
-/*   text-align: center;*/
-/*   cursor: pointer;*/
-/* }*/
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 332px;
+  width: 30%;
+  background: #3085a3;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
 
-/* .grid figure img {*/
-/*   position: relative;*/
-/*   display: block;*/
-/*   min-height: 100%;*/
-/*   max-width: 100%;*/
-/*   opacity: 0.8;*/
-/*   transition: all 0.3s linear;*/
-/* }*/
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+  transition: all 0.3s linear;
+}
 
-/* .grid figure figcaption {*/
-/*   padding: 2em;*/
-/*   /*color: #fff;*/*/
-/*   text-transform: uppercase;*/
-/*   font-size: 1.25em;*/
-/*   -webkit-backface-visibility: hidden;*/
-/*   backface-visibility: hidden;*/
-/* }*/
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
-/* .grid figure img:hover {*/
-/*   opacity: 1;*/
-/*   transform: translateY(-20px);*/
-/* }*/
+.grid figure img:hover {
+  opacity: 1;
+  transform: translateY(-20px);
+} */
