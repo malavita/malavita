@@ -2,6 +2,7 @@
   "name": "malavita",
   "version": "1.0.0",
   "devDependencies": {
+    "autoprefixer": "^6.1.0",
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.8.2",
     "grunt-contrib-concat": "~0.3.0",
@@ -11,8 +12,16 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-grunticon": "~1.0.0",
     "grunt-jekyll": "~0.4.1",
+    "grunt-postcss": "^0.7.1",
     "grunt-shell": "~0.6.4",
+<<<<<<< HEAD
     "grunt-svgstore": "^0.3.6",
     "load-grunt-tasks": "~0.2.1"
+=======
+    "grunt-svgstore": "~0.3.0",
+    "load-grunt-tasks": "~0.2.1",
+    "postcss-scss": "^0.1.3",
+    "precss": "^1.3.0"
+>>>>>>> 36df8143fdb2f109144fe946ac305afee77a0ed0
   }
 }
