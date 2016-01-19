@@ -19,40 +19,26 @@ module.exports = function(grunt) {
         "_excursions/*.md",
         "_includes/*.html"
       ],
-      scss: ['./scss/global.scss'],
-      css: ['./css/style-unprefixed.css', './css/style.css'],
       js: ['./js/script.js']
     },
 
-    // uglify: {
-    //   global: {
-    //     files: {
-    //       './js/script.min.js': '<%= paths.js %>'
-    //     }
-    //   }
-    // },
-
-    sass: {
-      global: {
-        options: {
-          style: 'expanded'
-        },
-        files: {
-          '<%= paths.css[0] %>': '<%= paths.scss %>'
-        }
-      }
-    },
-
-    autoprefixer: {
-      global: {
-        src: '<%= paths.css[0] %>',
-        dest: '<%= paths.css[1] %>'
+    postcss: {
+      options: {
+        parser: require('postcss-scss'),
+        processors: [
+          require('autoprefixer')(),
+          require('precss')()
+        ]
+      },
+      dist: {
+        src: 'postcss/*.css',
+        dest: 'css/style.css'
       }
     },
 
     shell: {
       jekyllServe: {
-        command: 'jekyll serve --baseurl='
+        command: 'jekyll serve --port 8000 --baseurl='
       },
       jekyllBuild: {
         command: 'jekyll build --config _config-dev.yml'
@@ -72,8 +58,8 @@ module.exports = function(grunt) {
       //   tasks: ["uglify", "shell:jekyllBuild"]
       // },
       css: {
-        files: ["./scss/*.scss"],
-        tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
+        files: ["./postcss/*.css"],
+        tasks: ["postcss", "shell:jekyllBuild"]
       }
     }
   });
@@ -85,8 +71,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("default", [
-    "sass",
-    "autoprefixer",
+    "postcss",
     "shell:jekyllBuild",
     "watch"
   ]);

@@ -1,28 +1,34 @@
+
 @font-face {
   font-family: "Five Minutes";
   src: url("../fonts/Five Minutes.otf");
   font-weight: normal;
 }
-h1 {
-  font: 9.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
 a {
   text-decoration: none;
   color: #000;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
-.container {
+body {
+  font-size: 16px;
+}
+
+.page-wrap {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .page-header {
   padding: 2.5em 0 0;
 }
+.logo__name {
+  font: 8.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 
-.page-navigation {
+.page-nav {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -31,96 +37,83 @@ a {
   padding: 0.5em 0;
 }
 
-.top-menu {
+.page-nav__menu {
+  padding: 0 1.5em;
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+.page-nav__soc {
+  padding: 0 1.5em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.main-menu {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  padding: 0 1.5em;
-  -webkit-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
 }
-
-.top-menu a {
+.main-menu__item {
+  position: relative;
+}
+.main-menu__link {
   font-size: 2em;
   text-transform: lowercase;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+  font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
+}
+.main-menu__link:hover path {
+  visibility: visible;
+  -webkit-animation: dash 0.2s linear forwards;
+  animation: dash 0.2s linear forwards;
+}
+.main-menu__active {
+  color: #d6575b;
+}
+.main-menu__active .main-menu__line {
+  visibility: hidden;
+}
+.main-menu__line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.main-menu__line path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  visibility: hidden;
 }
 
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .social-menu {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 1.5em;
 }
-
-.social-menu li {
+.social-menu__item {
   margin: 0 0.15em;
-}
-
-.page-content {
-  padding: 1em 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 2px solid #eee;
-}
-
-.banner {
-  -webkit-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  padding: 0 1.5em;
-  border-left: 2px solid #eee;
-}
-
-.banner img {
-  width: 100%;
-  border-radius: 2px;
-}
-
-.page-sidebar {
-  border-left: 2px solid #eee;
-  border-right: 2px solid #eee;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 1em 1.5em 0 1.5em;
-}
-
-.page-sidebar h2 {
-  text-align: center;
-  font-size: 2em;
-  margin: 1em 0;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
-  text-transform: lowercase;
-}
-
-.page-sidebar p {
-  font: 1.05em/1.3 'Roboto', sans-serif;
-}
-
-.page-sidebar span {
-  text-decoration: line-through;
-}
-
-.page-sidebar img {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin-top: 1em;
-  padding: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .icon {
@@ -155,133 +148,172 @@ a {
   background-size: 2em;
 }
 
-.feed-title {
+.about-site {
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #eee;
+}
+
+.about-site__banner {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 0 24px;
+  border-left: 2px solid #eee;
+}
+
+.about-site__sidebar {
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 16px 24px 0;
+}
+
+.banner__img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.about-me__title {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0;
+  font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
+  text-transform: lowercase;
+}
+
+.about-me__text {
+  font: 1.05em/1.3 'Roboto', sans-serif;
+}
+
+.about-me__photo {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 1em;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+/*.about-site__sidebar span {
+  text-decoration: line-through;
+}*/
+
+.posts-sec {
+  padding-top: 10px;
+  }
+
+.posts-sec__title-wrap {
   height: 70px;
   margin: 2em auto;
   text-align: center;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  /*width: 350px;*/
 }
 
-.feed-title span {
+.posts-sec__title {
   margin: auto;
   font-size: 2em;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+  font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
 }
 
-.feed-title svg {
+.posts-sec__title-wrap svg {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.posts-list:first-of-type {
-  /*border-top: 2px solid #eee;*/
-}
-
-.posts-list {
-  /*padding-top: 1em;*/
+.posts-sec__posts-list {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
-.posts-list li:first-of-type {
-  border-left: 2px solid #eee;
-}
-
-.posts-list li {
+.post-wrap {
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   border-right: 2px solid #eee;
+  padding: 0 24px;
 }
 
-.posts-list img:hover {
+.post-wrap:first-of-type {
+  border-left: 2px solid #eee;
+}
+.post__img:hover {
   opacity: 1;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
-
-.posts-list div {
+.post__wrap-img {
   overflow: hidden;
-  margin: 0 1.5em;
 }
-
-.posts-list img {
+.post__img {
   cursor: pointer;
   display: block;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   opacity: 0.8;
   margin: 0 auto;
   -webkit-transform: scale(1.12);
-      -ms-transform: scale(1.12);
-          transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-.posts-list h2, .posts-list h3 {
+.post__title, .post__pub {
   text-align: center;
-  font-family: 'Five Minutes' Arial, Helvetica, sans-serif;
+  font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
 }
-
-.posts-list h2 {
+.post__title {
+  margin-top: 0.5em;
   font-size: 2em;
   text-transform: lowercase;
-  margin-top: 0.5em;
 }
-
-.posts-list h3 {
+.post__title :hover {
+  color: #d6575b;
+}
+.post__pub {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-top: 0.4em;
   font-size: 1.5em;
   text-transform: lowercase;
-  margin-bottom: 0.5em;
 }
 
 .page-footer {
-  /*border-top: 2px solid #eee;*/
-  height: 100px;
-  /*background-color: #ddd;*/
-  margin-top: 1em;
+  border-top: 2px solid #dadada;
+  padding: 2em 0;
+  /*background-color: #FAFBFC; */
+  margin-top: 40px;
+}
+.copyright {
+  text-align: center;
 }
 
-.page-navigation li {
-  position: relative;
-}
 
-.page-navigation svg {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-}
-
-.page-navigation path {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-}
-
-.page-navigation a:hover path {
-  -webkit-animation: dash 0.2s linear forwards;
-}
-
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.grid {
+/* .grid {
   position: relative;
   margin: 0 auto;
   padding: 1em 0 4em;
@@ -299,7 +331,7 @@ a {
   max-width: 480px;
   max-height: 332px;
   width: 30%;
-  /*background: #3085a3;*/
+  background: #3085a3;
   background-color: #fff;
   text-align: center;
   cursor: pointer;
@@ -316,7 +348,7 @@ a {
 
 .grid figure figcaption {
   padding: 2em;
-  /*color: #fff;*/
+  color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
@@ -325,7 +357,5 @@ a {
 
 .grid figure img:hover {
   opacity: 1;
-  -webkit-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-          transform: translateY(-20px);
-}
+  transform: translateY(-20px);
+} */
