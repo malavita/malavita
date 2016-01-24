@@ -1,3 +1,5 @@
+@import "reset";
+
 @font-face  {
     font-family: 'Five Minutes';
     src: url(../fonts/FiveMinutes.woff2) format('woff2'),
