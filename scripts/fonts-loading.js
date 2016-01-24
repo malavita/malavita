@@ -6,7 +6,7 @@
         weight: 400
     });
     console.time('font-loaded');
-    wnd.Promise.all([fontA, fontB]).then(function () {
+    wnd.Promise.all([fontA.check(), fontB.check()]).then(function () {
         console.timeEnd('font-loaded');
         document.documentElement.classList.add('fonts-loaded');
         console.log('Font is available');

@@ -16,7 +16,7 @@ G=0;d.dir="ltr";y(m,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d
         weight: 400
     });
     console.time('font-loaded');
-    wnd.Promise.all([fontA, fontB]).then(function () {
+    wnd.Promise.all([fontA.check(), fontB.check()]).then(function () {
         console.timeEnd('font-loaded');
         document.documentElement.classList.add('fonts-loaded');
         console.log('Font is available');
