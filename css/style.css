@@ -139,7 +139,10 @@ body {
 .main-menu__link {
     font-size: 2em;
     text-transform: lowercase;
-    font-family: 'Five Minutes',Arial,Helvetica,sans-serif
+    font-family: Arial,Helvetica,sans-serif;
+}
+.fonts-loaded .main-menu__link{
+    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
 }
 .main-menu__link:hover path {
     visibility: visible;
