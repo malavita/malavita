@@ -11,6 +11,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section  {
@@ -46,6 +47,7 @@ table  {
           url(../fonts/FiveMinutes.otf) format('opentype');
     font-weight: normal;
 }
+
 a {
   text-decoration: none;
   color: #000;
@@ -65,8 +67,13 @@ body {
   padding: 2.5em 0 0;
 }
 .logo__name {
-    font: 8.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
+    font: 5em/2 Arial, Helvetica, sans-serif;
     text-align: center;
+}
+.wf-active .logo__name{
+    font-family: 'Stalemate';
+    font-size: 8.5em;
+    line-height: 1.2;
 }
 
 .page-nav {

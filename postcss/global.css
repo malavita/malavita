@@ -1,3 +1,7 @@
+$font-decorative: 'Five Minutes', Arial, Helvetica, sans-serif;
+$rootFontSize: 16px;
+$colorHoverBase: #d6575b;
+
 @import "reset";
 
 @font-face  {
@@ -8,9 +12,6 @@
     font-weight: normal;
 }
 
-$font-decorative: 'Five Minutes', Arial, Helvetica, sans-serif;
-$rootFontSize: 16px;
-$colorHoverBase: #d6575b;
 a {
   text-decoration: none;
   color: #000;
@@ -30,8 +31,14 @@ body {
 }
 .logo {
   &__name {
-    font: 8.5em/1.2 'Stalemate', Arial, Helvetica, sans-serif;
+    font: 5em/2 Arial, Helvetica, sans-serif;
     text-align: center;
+
+    .wf-active &{
+      font-family: 'Stalemate';
+      font-size: 8.5em;
+      line-height: 1.2;
+    }
   }
 }
 
