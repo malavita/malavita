@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         "_excursions/*.md",
         "_includes/*.html"
       ],
-      js: ['./js/script.js']
+      js: ['./js/all.js']
     },
 
     postcss: {
@@ -43,6 +43,16 @@ module.exports = function(grunt) {
       jekyllBuild: {
         command: 'jekyll build --config _config-dev.yml'
       }
+    },
+
+    concat: {
+        options: {
+            separator: ';',
+        },
+        dist: {
+            src: ['bower_components/fontfaceobserver/fontfaceobserver.js'],
+            dest: 'js/all.js',
+        },
     },
 
     watch: {
@@ -75,6 +85,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("default", [
     "postcss",
+    "concat",
     "shell:jekyllBuild",
     "watch"
   ]);

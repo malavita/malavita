@@ -1,20 +1,18 @@
 {% include head.html %}
 
 <body>
-
   <div class="page-wrap">
 
     {% include header.html %}
-
     {{ content }}
-
     {% include footer.html %}
 
   </div>
 
-  {% if site.baseurl == "" %}
-  <script src="//localhost:9000/livereload.js"></script>
+  {% if jekyll.environment == "development" %}
+    <script src="//localhost:9000/livereload.js"></script>
   {% endif %}
+
 </body>
 
 </html>
