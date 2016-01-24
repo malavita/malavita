@@ -10,16 +10,17 @@ B.prototype.a=function(a,b){var c=this,l=a||"BESbswy",E=b||3E3,F=(new Date).getT
 G=0;d.dir="ltr";y(m,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(m.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);t=m.a.offsetWidth;u=n.a.offsetWidth;v=p.a.offsetWidth;q();A(m,function(a){e=a;r()});y(m,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){f=a;r()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){g=a;r()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=B.prototype.a;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());
 ;(function(wnd){
     var fontA = new FontFaceObserver('Five Minutes', {
-      weight: 400
+        weight: 400
     });
     var fontB = new FontFaceObserver('Stalemate', {
-      weight: 400
+        weight: 400
     });
-
+    console.time('font-loaded');
     wnd.Promise.all([fontA, fontB]).then(function () {
+        console.timeEnd('font-loaded');
         document.documentElement.classList.add('fonts-loaded');
-      console.log('Font is available');
+        console.log('Font is available');
     }, function () {
-      console.log('Font is not available');
+        console.log('Font is not available');
     });
 })(this);
