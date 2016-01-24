@@ -75,11 +75,13 @@ body {
   padding: 2.5em 0 0;
 }
 .logo__name {
-    font: 5em/2 Arial, Helvetica, sans-serif;
+    font: Arial,Helvetica,sans-serif;
+    font-size: 5em;
+    line-height: 2;
     text-align: center;
 }
 .fonts-loaded .logo__name{
-    font-family: 'Stalemate';
+    font-family: 'Stalemate',Arial,Helvetica,sans-serif;
     font-size: 8.5em;
     line-height: 1.2;
 }

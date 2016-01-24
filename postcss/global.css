@@ -1,4 +1,7 @@
-$font-decorative: 'Five Minutes', Arial, Helvetica, sans-serif;
+$logo-font: 'Stalemate', Arial, Helvetica, sans-serif;
+$logo-font-fallback: Arial, Helvetica, sans-serif;
+$menu-font: 'Five Minutes', Arial, Helvetica, sans-serif;
+$menu-font-fallback: 'Arial, Helvetica, sans-serif;
 $rootFontSize: 16px;
 $colorHoverBase: #d6575b;
 
@@ -39,11 +42,13 @@ body {
 }
 .logo {
   &__name {
-    font: 5em/2 Arial, Helvetica, sans-serif;
+    font: $logo-font-fallback;
+    font-size: 5em;
+    line-height: 2;
     text-align: center;
 
     .fonts-loaded &{
-      font-family: 'Stalemate';
+      font-family: $logo-font;
       font-size: 8.5em;
       line-height: 1.2;
     }
@@ -73,7 +78,12 @@ body {
   &__link {
     font-size: 2em;
     text-transform: lowercase;
-    font-family: $font-decorative;
+    font-family: $menu-font-fallback;
+
+    .fonts-loaded &{
+      font-family: $menu-font;
+    }
+
      &:hover path {
       visibility: visible;
       animation: dash 0.2s linear forwards;
@@ -170,7 +180,7 @@ body {
     text-align: center;
     font-size: 2em;
     margin: 1em 0;
-    font-family: $font-decorative;
+    font-family: $menu-font;
     text-transform: lowercase;
   }
   &__text {
@@ -199,7 +209,7 @@ body {
     &__title {
       margin: auto;
       font-size: 2em;
-      font-family: $font-decorative;
+      font-family: $menu-font;
     }
     &__title-wrap svg {
       position: absolute;
@@ -243,7 +253,7 @@ body {
   }
   &__title, &__pub {
     text-align: center;
-    font-family: $font-decorative;
+    font-family: $menu-font;
   }
   &__title {
     margin-top: 0.5em;
