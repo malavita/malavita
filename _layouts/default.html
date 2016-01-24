@@ -12,8 +12,9 @@
 
   </div>
 
-  <script src="//localhost:35729/livereload.js"></script>
-
+  {% if site.baseurl == "" %}
+  <script src="//localhost:9000/livereload.js"></script>
+  {% endif %}
 </body>
 
 </html>

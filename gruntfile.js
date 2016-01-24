@@ -47,8 +47,11 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: true
-      },
+            livereload: {
+                host: 'localhost',
+                port: 9000,
+            }
+          },
       site: {
         files: '<%= paths.html %>',
         tasks: ["shell:jekyllBuild"]
