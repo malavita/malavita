@@ -41,6 +41,14 @@ table  {
 }
 
 @font-face  {
+    font-family: 'Stalemate';
+    src: url(../fonts/Stalemate.woff2) format('woff2'),
+          url(../fonts/Stalemate.woff) format('woff'),
+          url(../fonts/Stalemate.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face  {
     font-family: 'Five Minutes';
     src: url(../fonts/FiveMinutes.woff2) format('woff2'),
           url(../fonts/FiveMinutes.woff) format('woff'),
@@ -70,7 +78,7 @@ body {
     font: 5em/2 Arial, Helvetica, sans-serif;
     text-align: center;
 }
-.wf-active .logo__name{
+.fonts-loaded .logo__name{
     font-family: 'Stalemate';
     font-size: 8.5em;
     line-height: 1.2;
