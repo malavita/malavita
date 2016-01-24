@@ -5,7 +5,6 @@
     var fontB = new FontFaceObserver('Stalemate', {
       weight: 400
     });
-
     wnd.Promise.all([fontA, fontB]).then(function () {
         document.documentElement.classList.add('fonts-loaded');
       console.log('Font is available');
