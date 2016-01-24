@@ -6,9 +6,11 @@ exclude: [
   .gitignore,
   Thumbs.db,
   CNAME,
-  scss,
+  scripts,
+  postcss,
   .sass-cache,
   package.json,
+  bower.json,
   gruntfile.js,
   node_modules,
   readme.md

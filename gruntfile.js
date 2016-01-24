@@ -50,7 +50,7 @@ module.exports = function(grunt) {
             separator: ';',
         },
         dist: {
-            src: ['bower_components/fontfaceobserver/fontfaceobserver.js'],
+            src: ['bower_components/fontfaceobserver/fontfaceobserver.js', 'scripts/*.js'],
             dest: 'js/all.js',
         },
     },
