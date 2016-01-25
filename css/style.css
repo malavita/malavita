@@ -52,7 +52,7 @@ table  {
     font-family: 'Five Minutes';
     src: url(../fonts/FiveMinutes.woff2) format('woff2'),
           url(../fonts/FiveMinutes.woff) format('woff'),
-          url(../fonts/FiveMinutes.otf) format('opentype');
+          url(../fonts/FiveMinutes.ttf) format('truetype');
     font-weight: normal;
 }
 
