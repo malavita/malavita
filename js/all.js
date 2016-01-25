@@ -16,11 +16,16 @@ G=0;d.dir="ltr";y(m,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d
         weight: 400
     });
     console.time('font-loaded');
-    wnd.Promise.all([fontA.check(), fontB.check()]).then(function () {
-        console.timeEnd('font-loaded');
+    if (sessionStorage.fonts) {
         document.documentElement.classList.add('fonts-loaded');
-        console.log('Font is available');
-    }, function () {
-        console.log('Font is not available');
-    });
+    } else {
+        wnd.Promise.all([fontA.check(), fontB.check()]).then(function () {
+            console.timeEnd('font-loaded');
+            document.documentElement.classList.add('fonts-loaded');
+            sessionStorage.fonts = true;
+            console.log('Font is available');
+        }, function () {
+            console.log('Font is not available');
+        });
+    }
 })(this);
