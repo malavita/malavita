@@ -4,13 +4,22 @@ title: Malavita in Sicilia - Blog
 ---
 
 <main class="page-content">
-    {% for post in site.posts limit:5 %}
-      <div class="post-wrap">
-        <div class="post">
-          <h3 class="post__title">{{ post.title }}</h3>
-          <time class="post__pub">{% include post-date.html %}</time>
-          <a class="post__more" href="{{ post.url }}">Читать</a>
+  <div class="sec-post-list">
+    <div class="sec-post-list__wrap-title">
+      <h1 class="title-h">Блог</h1>
+    </div>
+    <div class="sec-post-list__wrap-list">
+      {% for post in site.posts limit:5 %}
+        <div class="sec-post-list__wrap-post">
+          <div class="post-list">
+            <h2 class="post-list__title"><a class="post-list__link" href="{{ post.url }}">{{ post.title }}</a></h2>
+            <time class="post-list__pub">{% include post-date.html %}</time>
+            <figure class="post-list__wrap-img">
+              <img class="post-list__img" src="images/illustration.jpg" alt="">
+            </figure>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
 </main>
