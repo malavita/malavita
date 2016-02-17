@@ -72,15 +72,17 @@ body {
   margin: 0 auto;
 }
 .page-header {
-  padding: 2.5em 0 0;
+  padding: 2.5em 0 30px;
 }
-.logo__name {
+.logo {
+}
+.logo__name  {
     font: Arial,Helvetica,sans-serif;
     font-size: 5em;
     line-height: 2;
     text-align: center;
 }
-.fonts-loaded .logo__name{
+.fonts-loaded .logo__name  {
     font-family: 'Stalemate',Arial,Helvetica,sans-serif;
     font-size: 8.5em;
     line-height: 1.2;
@@ -96,20 +98,20 @@ body {
   padding: 0.5em 0
 }
 
-.page-nav__soc {
-    padding: 0 1.5em;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-
-.page-nav__menu {
+.page-nav__menu  {
     padding: 0 1.5em;
     -webkit-box-flex: 3;
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
+}
+
+.page-nav__soc  {
+    padding: 0 1.5em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 .main-menu {
   display: -webkit-box;
@@ -120,37 +122,37 @@ body {
       -ms-flex-pack: distribute;
           justify-content: space-around
 }
-.main-menu__line {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
+.main-menu__item  {
+    position: relative;
 }
-.main-menu__line path {
-    stroke-dasharray: 100;
-    stroke-dashoffset: 100;
-    visibility: hidden;
-}
-.main-menu__active {
-    color: #d6575b;
-}
-.main-menu__active .main-menu__line {
-    visibility: hidden;
-}
-.main-menu__link {
+.main-menu__link  {
     font-size: 2em;
     text-transform: lowercase;
     font-family: Arial,Helvetica,sans-serif;
 }
-.fonts-loaded .main-menu__link{
+.fonts-loaded .main-menu__link  {
     font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
 }
-.main-menu__link:hover path {
+.main-menu__link:hover path  {
     visibility: visible;
     -webkit-animation: dash 0.2s linear forwards;
     animation: dash 0.2s linear forwards;
 }
-.main-menu__item {
-    position: relative;
+.main-menu__active  {
+    color: #d6575b;
+}
+.main-menu__active .main-menu__line  {
+    visibility: hidden;
+}
+.main-menu__line  {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+.main-menu__line path  {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    visibility: hidden;
 }
 
 @-webkit-keyframes dash {
@@ -174,7 +176,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center
 }
-.social-menu__item {
+.social-menu__item  {
     margin: 0 0.15em;
 }
 
@@ -185,33 +187,33 @@ body {
   height: 2em
 }
 
-.icon.search {
-    background: url(../svg/search.svg);
-    background-size: 2em;
-}
-
-.icon.rss {
-    background: url(../svg/rss.svg);
-    background-size: 2em;
-}
-
-.icon.instagram {
-    background: url(../svg/instagram.svg);
-    background-size: 2em;
-}
-
-.icon.flickr {
-    background: url(../svg/flickr.svg);
-    background-size: 2em;
-}
-
-.icon.facebook {
+.icon.facebook  {
     background: url(../svg/facebook.svg);
     background-size: 2em;
 }
 
+.icon.flickr  {
+    background: url(../svg/flickr.svg);
+    background-size: 2em;
+}
+
+.icon.instagram  {
+    background: url(../svg/instagram.svg);
+    background-size: 2em;
+}
+
+.icon.rss  {
+    background: url(../svg/rss.svg);
+    background-size: 2em;
+}
+
+.icon.search  {
+    background: url(../svg/search.svg);
+    background-size: 2em;
+}
+
 .about-site {
-  padding: 16px 0;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -219,7 +221,16 @@ body {
   border-bottom: 2px solid #eee
 }
 
-.about-site__sidebar {
+.about-site__banner  {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 0 24px;
+    border-left: 2px solid #eee;
+}
+
+.about-site__sidebar  {
     border-left: 2px solid #eee;
     border-right: 2px solid #eee;
     -webkit-box-flex: 1;
@@ -229,21 +240,30 @@ body {
     padding: 16px 24px 0;
 }
 
-.about-site__banner {
-    -webkit-box-flex: 3;
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    padding: 0 24px;
-    border-left: 2px solid #eee;
+.banner {
 }
 
-.banner__img {
+.banner__img  {
     width: 100%;
     border-radius: 2px;
 }
 
-.about-me__photo {
+.about-me {
+}
+
+.about-me__title  {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0;
+    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
+    text-transform: lowercase;
+}
+
+.about-me__text  {
+    font: 1.05em/1.3 'Roboto', sans-serif;
+}
+
+.about-me__photo  {
     width: 90%;
     display: block;
     margin: 0 auto;
@@ -253,46 +273,11 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
-.about-me__text {
-    font: 1.05em/1.3 'Roboto', sans-serif;
-}
-
-.about-me__title {
-    text-align: center;
-    font-size: 2em;
-    margin: 1em 0;
-    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
-    text-transform: lowercase;
-}
-
 .posts-sec {
   padding-top: 10px
   }
 
-.posts-sec__posts-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
-.posts-sec__title-wrap svg {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.posts-sec__title {
-    margin: auto;
-    font-size: 2em;
-    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
-}
-
-.posts-sec__title-wrap {
+.posts-sec__title-wrap  {
     height: 70px;
     margin: 2em auto;
     text-align: center;
@@ -301,6 +286,29 @@ body {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+}
+
+.posts-sec__title  {
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
+}
+
+.posts-sec__title-wrap svg  {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.posts-sec__posts-list  {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
 .post-wrap {
@@ -312,29 +320,20 @@ body {
   padding: 0 24px
 }
 
-.post-wrap:first-of-type {
+.post-wrap:first-of-type  {
     border-left: 2px solid #eee;
 }
-.post__pub {
-    display: block;
-    margin-bottom: 0.5em;
-    margin-top: 0.4em;
-    font-size: 1.5em;
-    text-transform: lowercase;
+.post {
 }
-.post__title {
-    margin-top: 0.5em;
-    font-size: 2em;
-    text-transform: lowercase;
+.post__img:hover  {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
-.post__title :hover {
-    color: #d6575b;
+.post__wrap-img  {
+    overflow: hidden;
 }
-.post__title, .post__pub {
-    text-align: center;
-    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
-}
-.post__img {
+.post__img  {
     cursor: pointer;
     display: block;
     box-sizing: border-box;
@@ -348,13 +347,75 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.post__wrap-img {
-    overflow: hidden;
+.post__title, .post__pub  {
+    text-align: center;
+    font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
 }
-.post__img:hover {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.post__title  {
+    margin-top: 0.5em;
+    font-size: 2em;
+    text-transform: lowercase;
+}
+.post__title :hover  {
+    color: #d6575b;
+}
+.post__pub  {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 0.4em;
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+.sec-post-list {
+  border-right: 2px solid #eee;
+  border-left: 2px solid #eee
+}
+.sec-post-list__wrap-title  {
+    text-align: center;
+    padding: 2em 0;
+    color: #d6575b;
+}
+.sec-post-list__wrap-post  {
+    padding: 2em 0;
+    margin: 0 auto;
+    border-bottom: 1px dotted #CCC;
+    width: 500px;
+}
+.sec-post-list__wrap-post:last-child  {
+    border-bottom: 0;
+}
+.title-h {
+  font-family: 'Five Minutes',Arial,Helvetica,sans-serif;
+  font-size: 3em
+}
+.title-h:before, .title-h:after  {
+    content: '— ';
+    display: inline-block;
+}
+.title-h:before  {
+    padding-right: 0.4em;
+}
+.title-h:after  {
+    padding-left: 0.4em;
+}
+.post-list {
+  text-align: center;
+  font-family: 'Five Minutes',Arial,Helvetica,sans-serif
+}
+.post-list__title  {
+    font-size: 2.5em;
+    padding-bottom: 0.4em;
+}
+.post-list__link:hover  {
+    color: #d6575b;
+}
+.post-list__pub  {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-bottom: 0.6em;
+}
+.post-list__img  {
+    width: 100%;
 }
 
 .page-footer {

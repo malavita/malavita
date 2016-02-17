@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
 }
 .page-header {
-  padding: 2.5em 0 0;
+  padding: 2.5em 0 30px;
 }
 .logo {
   &__name {
@@ -152,7 +152,7 @@ body {
 }
 
 .about-site {
-  padding: 16px 0;
+  padding-bottom: 16px;
   display: flex;
   border-bottom: 2px solid #eee;
   &__banner {
@@ -269,6 +269,57 @@ body {
     margin-top: 0.4em;
     font-size: 1.5em;
     text-transform: lowercase;
+  }
+}
+.sec-post-list {
+  border-right: 2px solid #eee;
+  border-left: 2px solid #eee;
+  &__wrap-title {
+    text-align: center;
+    padding: 2em 0;
+    color: $colorHoverBase;
+  }
+  &__wrap-post {
+    padding: 2em 0;
+    margin: 0 auto;
+    border-bottom: 1px dotted #CCC;
+    width: 500px;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+.title-h {
+  font-family: $menu-font;
+  font-size: 3em;
+  &:before, &:after {
+    content: '— ';
+    display: inline-block;
+  }
+  &:before {
+    padding-right: 0.4em;
+  }
+  &:after {
+    padding-left: 0.4em;
+  }
+}
+.post-list {
+  text-align: center;
+  font-family: $menu-font;
+  &__title {
+    font-size: 2.5em;
+    padding-bottom: 0.4em;
+  }
+  &__link:hover {
+    color: $colorHoverBase;
+  }
+  &__pub {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-bottom: 0.6em;
+  }
+  &__img {
+    width: 100%;
   }
 }
 
