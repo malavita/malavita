@@ -49,12 +49,11 @@ ul, ol {
   display: block;
   list-style-type: disc;
   padding-left: 40px;
-  font-family: $menu-font;
-  
+  /*font-family: $menu-font;*/
   margin: 1em 0 1.5em 0;
   strong {
-    font-family: $menu-font;
-    font-size: 1em;
+    /*font-family: $menu-font;*/
+    /*font-size: 1em;*/
     font-weight: bold;
   }
 }
@@ -63,7 +62,7 @@ ol {
 }
 .article li {
   margin: 0.5em 0 0.5em 0;
-  font-size: 1.6em;
+  /*font-size: 1.6em;*/
 }
 blockquote {
   border-left: 1px solid #d6575b;
@@ -79,4 +78,12 @@ blockquote p {
   line-height: 1.2;
   font-size: 2em;
   margin: 1em 0;
+}
+table {
+  max-width: 100%;
+  margin: 1em 0 1.5em 0;
+}
+table th, table td {
+  padding: 15px;
+  border: 1px solid #737171;
 }
