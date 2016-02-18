@@ -2,7 +2,7 @@
 layout: post
 published: true
 excerpt_separator: <!--more-->
-title: 2016-02-09-blog-magnetism
+title: Магнетизм
 date: 2016-2-18
 category: blog
 image: https://farm8.staticflickr.com/7501/15635261523_e22f480d70_b.jpg
