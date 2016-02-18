@@ -1,0 +1,89 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: $menu-font;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2.1em;
+}
+h4 {
+  font-size: 1.9em;
+}
+h5 {
+  font-size: 1.8em;
+}
+h6 {
+  font-size: 1.6em;
+}
+a {
+  color: $colorHoverBase;
+}
+a {
+  text-decoration: none;
+  transition: all 0.25s linear;
+}
+.article a {
+  border-bottom: 1px solid $colorHoverBase;
+  &:hover {
+    color: #34495e;
+    border-bottom: 1px solid #34495e;
+  }
+}
+p {
+  color: #737171;
+  margin: 1em 0 1.5em 0;
+  font-family: $rootFontFamily;
+  line-height: 1.6;
+}
+strong {
+  font-family: $rootBold;
+}
+i, em {
+  font-style: italic;
+}
+ul, ol {
+  display: block;
+  list-style-type: disc;
+  padding-left: 40px;
+  /*font-family: $menu-font;*/
+  margin: 1em 0 1.5em 0;
+  strong {
+    /*font-family: $menu-font;*/
+    /*font-size: 1em;*/
+    font-weight: bold;
+  }
+}
+ol {
+  list-style-type: decimal;
+}
+.article li {
+  margin: 0.5em 0 0.5em 0;
+  /*font-size: 1.6em;*/
+}
+blockquote {
+  border-left: 1px solid #d6575b;
+  padding-left: 1em;
+  strong {
+    font-family: $menu-font;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+blockquote p {
+  font-family: $menu-font;
+  line-height: 1.2;
+  font-size: 2em;
+  margin: 1em 0;
+}
+table {
+  max-width: 100%;
+  margin: 1em 0 1.5em 0;
+}
+table th, table td {
+  padding: 15px;
+  border: 1px solid #737171;
+}

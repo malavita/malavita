@@ -1,33 +1,40 @@
 ---
 layout: default
 ---
+<main class="page-content">
+  <div class="inner-page">
+    <article class="article">
+      <div class="article__wrap-title">
+        <h1 class="title-h">{{ page.title }}</h1>
+      </div>
+      <div class="article__content">
+        <div class="article__meta">
+          <time class="article__pub">
+            {% assign m = page.date | date: "%-m" %}
+            {{ page.date | date: "%-d" }}
+            {% case m %}
+              {% when '1' %}Января
+              {% when '2' %}Февраля
+              {% when '3' %}Марта
+              {% when '4' %}Апреля
+              {% when '5' %}Мая
+              {% when '6' %}Июня
+              {% when '7' %}Июля
+              {% when '8' %}Августа
+              {% when '9' %}Сентября
+              {% when '10' %}Октября
+              {% when '11' %}Ноября
+              {% when '12' %}Декабря
+            {% endcase %}
+            {{ page.date | date: "%Y" }}
+          </time>
+        </div>
 
-<article class="article">
+        <div class="article-text">
+          {{ content }}
+        </div>
 
-  <div class="meta">
-    <time>
-      {% assign m = page.date | date: "%-m" %}
-      {{ page.date | date: "%-d" }}
-      {% case m %}
-        {% when '1' %}Января
-        {% when '2' %}Февраля
-        {% when '3' %}Марта
-        {% when '4' %}Апреля
-        {% when '5' %}Мая
-        {% when '6' %}Июня
-        {% when '7' %}Июля
-        {% when '8' %}Августа
-        {% when '9' %}Сентября
-        {% when '10' %}Октября
-        {% when '11' %}Ноября
-        {% when '12' %}Декабря
-      {% endcase %}
-      {{ page.date | date: "%Y" }}
-    </time>
+      </div>
+    </article>
   </div>
-
-  <div class="article-text">
-    {{ content }}
-  </div>
-
-</article>
+</main>

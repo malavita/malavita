@@ -4,13 +4,13 @@ title: Malavita in Sicilia - Blog
 ---
 
 <main class="page-content">
-  <div class="sec-post-list">
-    <div class="sec-post-list__wrap-title">
+  <div class="inner-page">
+    <div class="inner-page__wrap-title">
       <h1 class="title-h">Блог</h1>
     </div>
-    <div class="sec-post-list__wrap-list">
+    <div class="inner-page__wrap-list">
       {% for post in site.posts limit:5 %}
-        <div class="sec-post-list__wrap-post">
+        <div class="inner-page__wrap-post">
           <div class="post-list">
             <h2 class="post-list__title"><a class="post-list__link" href="{{ post.url }}">{{ post.title }}</a></h2>
             <time class="post-list__pub">{% include post-date.html %}</time>
