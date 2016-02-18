@@ -63,6 +63,10 @@ h6  {
 a  {
     color: #d6575b;
 }
+a  {
+    text-decoration: none;
+    transition: all 0.25s linear;
+}
 .article a  {
     border-bottom: 1px solid #d6575b;
 }
@@ -145,13 +149,6 @@ blockquote p  {
     src: url(../fonts/RobotoSlabBold.woff) format('woff'),
           url(../fonts/RobotoSlabBold.ttf) format('truetype');
     font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-  -webkit-transition: all 0.25s linear;
-  transition: all 0.25s linear;
 }
 
 body {

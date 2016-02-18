@@ -22,6 +22,10 @@ h6 {
 a {
   color: $colorHoverBase;
 }
+a {
+  text-decoration: none;
+  transition: all 0.25s linear;
+}
 .article a {
   border-bottom: 1px solid $colorHoverBase;
   &:hover {

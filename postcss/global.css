@@ -41,12 +41,6 @@ $rootBold: 'RobotoSlabBold', serif;
     font-weight: normal;
 }
 
-a {
-  text-decoration: none;
-  color: $colorBlack;
-  transition: all 0.25s linear;
-}
-
 body {
   font-size: $rootFontSize;
   font-family: $rootFontFamily;
