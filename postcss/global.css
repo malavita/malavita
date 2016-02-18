@@ -3,9 +3,13 @@ $logo-font-fallback: Arial, Helvetica, sans-serif;
 $menu-font: 'Five Minutes', Arial, Helvetica, sans-serif;
 $menu-font-fallback: Arial, Helvetica, sans-serif;
 $rootFontSize: 16px;
+$rootFontFamily: 'RobotoSlabRegular', serif;
 $colorHoverBase: #d6575b;
+$colorBlack: #000;
+$rootBold: 'RobotoSlabBold', serif;
 
 @import "reset";
+@import "_basic-style.css";
 
 @font-face  {
     font-family: 'Stalemate';
@@ -23,14 +27,30 @@ $colorHoverBase: #d6575b;
     font-weight: normal;
 }
 
+@font-face  {
+    font-family: 'RobotoSlabRegular';
+    src: url(../fonts/RobotoSlabRegular.woff) format('woff'),
+          url(../fonts/RobotoSlabRegular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face  {
+    font-family: 'RobotoSlabBold';
+    src: url(../fonts/RobotoSlabBold.woff) format('woff'),
+          url(../fonts/RobotoSlabBold.ttf) format('truetype');
+    font-weight: normal;
+}
+
 a {
   text-decoration: none;
-  color: #000;
+  color: $colorBlack;
   transition: all 0.25s linear;
 }
 
 body {
   font-size: $rootFontSize;
+  font-family: $rootFontFamily;
+  color: #737171;
 }
 
 .page-wrap {
@@ -43,6 +63,7 @@ body {
 .logo {
   &__name {
     font: $logo-font-fallback;
+    color: $colorBlack;
     font-size: 5em;
     line-height: 2;
     text-align: center;
@@ -72,13 +93,19 @@ body {
 .main-menu {
   display: flex;
   justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   &__item {
     position: relative;
+    margin: 0;
+    padding: 0;
   }
   &__link {
     font-size: 2em;
     text-transform: lowercase;
     font-family: $menu-font-fallback;
+    color: $colorBlack;
 
     .fonts-loaded &{
       font-family: $menu-font;
@@ -117,6 +144,9 @@ body {
 .social-menu {
   display: flex;
   justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   &__item {
     margin: 0 0.15em;
   }
@@ -184,7 +214,8 @@ body {
     text-transform: lowercase;
   }
   &__text {
-    font: 1.05em/1.3 'Roboto', sans-serif;
+    font: 1.05em/1.3 $rootFontFamily;
+    font-size: 0.9em;
   }
   &__photo {
     width: 90%;
@@ -210,6 +241,7 @@ body {
       margin: auto;
       font-size: 2em;
       font-family: $menu-font;
+      color: $colorBlack;
     }
     &__title-wrap svg {
       position: absolute;
@@ -254,11 +286,15 @@ body {
   &__title, &__pub {
     text-align: center;
     font-family: $menu-font;
+    color: $colorBlack;
   }
   &__title {
     margin-top: 0.5em;
     font-size: 2em;
     text-transform: lowercase;
+    a {
+    color: $colorBlack;
+  }
     :hover {
       color: $colorHoverBase;
     }
@@ -271,13 +307,11 @@ body {
     text-transform: lowercase;
   }
 }
-.sec-post-list {
+.inner-page {
   border-right: 2px solid #eee;
   border-left: 2px solid #eee;
   &__wrap-title {
-    text-align: center;
     padding: 2em 0;
-    color: $colorHoverBase;
   }
   &__wrap-post {
     padding: 2em 0;
@@ -291,7 +325,9 @@ body {
 }
 .title-h {
   font-family: $menu-font;
+  color: $colorHoverBase;
   font-size: 3em;
+  text-align: center;
   &:before, &:after {
     content: '— ';
     display: inline-block;
@@ -310,12 +346,16 @@ body {
     font-size: 2.5em;
     padding-bottom: 0.4em;
   }
-  &__link:hover {
-    color: $colorHoverBase;
+  &__link {
+    color: $colorBlack;
+    &:hover {
+      color: $colorHoverBase;
+    }
   }
   &__pub {
     display: inline-block;
     font-size: 1.5em;
+    color: $colorBlack;
     padding-bottom: 0.6em;
   }
   &__img {
@@ -323,11 +363,40 @@ body {
   }
 }
 
+.article {
+  padding: 0 5%;
+  &__wrap-title {
+    text-align: center;
+    padding: 2em 0 1em;
+    color: $colorHoverBase;
+  }
+  &__meta {
+    text-align: center;
+  }
+  &__pub {
+    display: inline-block;
+    font-size: 1.5em;
+    color: $colorBlack;
+    font-family: $menu-font;
+  }
+  &__meta {
+    padding-bottom: 2em;
+  }
+  img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
 .page-footer {
   border-top: 2px solid #dadada;
   padding: 2em 0;
   margin-top: 40px;
 }
 .copyright {
+  font-size: 0.9em;
   text-align: center;
+  margin: 0;
 }
