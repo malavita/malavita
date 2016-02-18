@@ -1,5 +1,5 @@
 name: Tatiana Catalioto
-markdown: redcarpet
+markdown: kramdown
 baseurl: ""
 exclude: [
   .git,
