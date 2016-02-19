@@ -1,8 +1,11 @@
 ---
-excerpt_separator: <!--more-->
 layout: post
 published: true
-title: Совет путешественнику
+excerpt_separator: <!--more-->
+title: Магнетизм
+date: 2016-02-09
+category: blog
+image: https://farm8.staticflickr.com/7501/15635261523_e22f480d70_b.jpg
 ---
 ![enter image description here](https://lh3.googleusercontent.com/-zJ-Dt-U0K2o/VlcA0ZLtkMI/AAAAAAAAD1Y/xOu2akmmpsg/s0/IMGP7987.jpg "sicilia.jpg")
 
