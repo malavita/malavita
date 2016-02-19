@@ -1,6 +1,8 @@
-{% assign months = "Января|Февраля|Марта|Апреля|Мая|Июня|Июля|Августа|Сентября|Октября|Ноября|Декабря" | split: "|" %}
-{% assign m = include.date | date: "%-m" | minus: 1 %}
-{% assign date = include.date | date: "%-d" %}
-{% assign month = months[m] %}
-{% assign year = include.date | date: "%Y" %}
+{% capture code %}
+    {% assign months = "Января|Февраля|Марта|Апреля|Мая|Июня|Июля|Августа|Сентября|Октября|Ноября|Декабря" | split: "|" %}
+    {% assign m = include.date | date: "%-m" | minus: 1 %}
+    {% assign date = include.date | date: "%-d" %}
+    {% assign month = months[m] %}
+    {% assign year = include.date | date: "%Y" %}
+{% endcapture %}{% assign code = nil %}
 {{ date | append: ' ' | append: month | append: ' ' | append: year }}

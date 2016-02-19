@@ -427,12 +427,12 @@ body {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  /* border-right: 2px solid #eee;*/
+  /* border-right: 2px solid #eee;*/
   background: url(../images/line.png) top right repeat-y;
   padding: 0 24px
 }
 
-.post-wrap:first-of-type  {/* border-left: 2px solid #eee;*/
+.post-wrap:first-of-type  {/* border-left: 2px solid #eee;*/
     background: url(../images/line.png) top left repeat-y,
     url(../images/line.png) 102% 0 repeat-y;
 }
@@ -579,7 +579,7 @@ body {
 
 
 .page-footer {
-  /* border-top: 2px solid #dadada;*/
+  /* border-top: 2px solid #dadada;*/
   background: url(../images/line-hor.png) left top repeat-x;
   padding: 2em 0;
   margin-top: 40px;
