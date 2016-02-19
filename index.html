@@ -31,29 +31,15 @@ title: Malavita in Sicilia
     </svg>
   </div>
   <div class="posts-sec__posts-list">
+    {% for post in site.posts limit:3 %}
     <div class="post-wrap">
       <div class="post">
-        <div class="post__wrap-img"><a href="#"><img class="post__img" src="./images/image1.jpg" alt=""></a></div>
-        <h3 class="post__title"><a href="#">Сицилия, Сицилия</a></h3>
-        <time class="post__pub">Январь 29, 2015</time>
+        <div class="post__wrap-img"><a href="{{ post.url }}"><img class="post__img" src="{{ post.image }}" alt=""></a></div>
+        <h3 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <time class="post__pub">{% include {{ site.filters.date }} date=post.date %}</time>
       </div>
     </div>
-
-    <div class="post-wrap">
-      <div class="post">
-        <div class="post__wrap-img"><a href="#"><img class="post__img" src="./images/image2.jpg" alt=""></a></div>
-        <h3 class="post__title"><a href="">San Berillo, Catania</a></h3>
-        <time class="post__pub">Ноябрь 18, 2014</time>
-      </div>
-    </div>
-
-    <div class="post-wrap">
-      <div class="post">
-        <div class="post__wrap-img"><a href="#"><img class="post__img" src="./images/image3.jpg" alt=""></a></div>
-        <h3 class="post__title"><a href="">San Berillo, Catania</a></h3>
-        <time class="post__pub">Ноябрь 18, 2014</time>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 
 </section>
