@@ -72,9 +72,11 @@ body {
 
 .page-nav {
   display: flex;
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
-  padding: 0.5em 0;
+/*  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;*/
+  background: url(../images/line-hor.png) top left repeat-x,
+  url(../images/line-hor.png) bottom left repeat-x;
+  padding: 1.3em 0;
   &__menu {
     padding: 0 1.5em;
     flex: 3;
@@ -176,23 +178,28 @@ body {
 }
 
 .about-site {
-  padding-bottom: 16px;
+  padding-bottom: 40px;
   display: flex;
-  border-bottom: 2px solid #eee;
+  /*border-bottom: 2px solid #eee;*/
+  background: url(../images/line-hor.png) left bottom repeat-x;
   &__banner {
     flex: 3;
-    padding: 0 24px;
-    border-left: 2px solid #eee;
+    padding: 0 15px 0 24px;
+    /*border-left: 2px solid #eee;*/
+    background: url(../images/line.png) top left repeat-y;
   }
   &__sidebar {
-    border-left: 2px solid #eee;
-    border-right: 2px solid #eee;
+/*    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;*/
+    background: url(../images/line.png) top left repeat-y,
+    url(../images/line.png) top right repeat-y;
     flex: 1;
     padding: 16px 24px 0;
   }
 }
 
 .banner {
+  padding-left: 10px;
   &__img {
     width: 100%;
     border-radius: 2px;
@@ -250,13 +257,20 @@ body {
 
 .post-wrap {
   flex: 1;
-  border-right: 2px solid #eee;
+  // border-right: 2px solid #eee;
+  background: url(../images/line.png) top right repeat-y;
   padding: 0 24px;
   &:first-of-type {
-    border-left: 2px solid #eee;
+    // border-left: 2px solid #eee;
+    background: url(../images/line.png) top left repeat-y,
+    url(../images/line.png) 102% 0 repeat-y;
+  }
+  &:nth-child(2) {
+   background: url(../images/line.png) 102% 0 repeat-y;
   }
 }
 .post {
+  padding: 0 10px;
   &__img:hover {
     opacity: 1;
     transform: scale(1);
@@ -302,8 +316,10 @@ body {
   }
 }
 .inner-page {
-  border-right: 2px solid #eee;
-  border-left: 2px solid #eee;
+/*  border-right: 2px solid #eee;
+  border-left: 2px solid #eee;*/
+  background: url(../images/line.png) top left repeat-y,
+   url(../images/line.png) top right repeat-y;
   &__wrap-title {
     padding: 2em 0;
   }
@@ -385,7 +401,8 @@ body {
 
 
 .page-footer {
-  border-top: 2px solid #dadada;
+  // border-top: 2px solid #dadada;
+  background: url(../images/line-hor.png) left top repeat-x;
   padding: 2em 0;
   margin-top: 40px;
 }

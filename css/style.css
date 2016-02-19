@@ -188,9 +188,11 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
-  padding: 0.5em 0
+/*  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;*/
+  background: url(../images/line-hor.png) top left repeat-x,
+  url(../images/line-hor.png) bottom left repeat-x;
+  padding: 1.3em 0
 }
 
 .page-nav__menu  {
@@ -317,12 +319,13 @@ body {
 }
 
 .about-site {
-  padding-bottom: 16px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid #eee
+  /*border-bottom: 2px solid #eee;*/
+  background: url(../images/line-hor.png) left bottom repeat-x
 }
 
 .about-site__banner  {
@@ -330,13 +333,14 @@ body {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    padding: 0 24px;
-    border-left: 2px solid #eee;
+    padding: 0 15px 0 24px;/*border-left: 2px solid #eee;*/
+    background: url(../images/line.png) top left repeat-y;
 }
 
-.about-site__sidebar  {
-    border-left: 2px solid #eee;
-    border-right: 2px solid #eee;
+.about-site__sidebar  {/*    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;*/
+    background: url(../images/line.png) top left repeat-y,
+    url(../images/line.png) top right repeat-y;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -345,6 +349,7 @@ body {
 }
 
 .banner {
+  padding-left: 10px
 }
 
 .banner__img  {
@@ -422,14 +427,21 @@ body {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border-right: 2px solid #eee;
+  /* border-right: 2px solid #eee;*/
+  background: url(../images/line.png) top right repeat-y;
   padding: 0 24px
 }
 
-.post-wrap:first-of-type  {
-    border-left: 2px solid #eee;
+.post-wrap:first-of-type  {/* border-left: 2px solid #eee;*/
+    background: url(../images/line.png) top left repeat-y,
+    url(../images/line.png) 102% 0 repeat-y;
+}
+
+.post-wrap:nth-child(2)  {
+    background: url(../images/line.png) 102% 0 repeat-y;
 }
 .post {
+  padding: 0 10px
 }
 .post__img:hover  {
     opacity: 1;
@@ -477,8 +489,10 @@ body {
     text-transform: lowercase;
 }
 .inner-page {
-  border-right: 2px solid #eee;
-  border-left: 2px solid #eee
+/*  border-right: 2px solid #eee;
+  border-left: 2px solid #eee;*/
+  background: url(../images/line.png) top left repeat-y,
+   url(../images/line.png) top right repeat-y
 }
 .inner-page__wrap-title  {
     padding: 2em 0;
@@ -565,7 +579,8 @@ body {
 
 
 .page-footer {
-  border-top: 2px solid #dadada;
+  /* border-top: 2px solid #dadada;*/
+  background: url(../images/line-hor.png) left top repeat-x;
   padding: 2em 0;
   margin-top: 40px;
 }
