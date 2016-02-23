@@ -1,4 +1,7 @@
 ---
+layout: post
+published: true
+excerpt_separator: <!--more-->
 title: За державу обидно
 date: 2016-01-21
 category: blog
