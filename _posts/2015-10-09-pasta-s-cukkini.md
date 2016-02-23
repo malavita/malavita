@@ -7,7 +7,6 @@ date: 2015-10-09
 category: blog
 image: https://farm1.staticflickr.com/780/22028712896_b1b747eeff_k.jpg
 ---
-## Паста с цуккини ##
 
 ![enter image description here](https://farm1.staticflickr.com/780/22028712896_b1b747eeff_k.jpg)
 
